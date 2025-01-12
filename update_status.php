@@ -8,7 +8,7 @@ mysqli_query($conn, $query);
 
 // 30 saniyeden fazla süre geçen kullanıcıları çevrimdışı yap
 $query = "UPDATE users SET online_status = 'offline' 
-          WHERE last_seen < NOW() - INTERVAL 30 SECOND";
+          WHERE last_seen < NOW() - INTERVAL 10 SECOND";
 mysqli_query($conn, $query);
 
 echo 'success';
