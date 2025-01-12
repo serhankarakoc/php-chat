@@ -715,7 +715,7 @@ $user_id = $_SESSION['user_id'];
         $(document).ready(function() {
             loadUsers();
             initialLoad();
-            setInterval(updateOnlineStatus, 30000);
+            setInterval(updateOnlineStatus, 10000);
             setInterval(loadMessages, 1000);
         });
 
